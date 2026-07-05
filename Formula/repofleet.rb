@@ -5,21 +5,21 @@
 class Repofleet < Formula
   desc "Issue-centered CLI tool for managing Git workflows across multiple repositories"
   homepage "https://github.com/mehranzand/repofleet"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.0/repofleet_darwin_amd64.tar.gz"
-      sha256 "6c59269c9ed7127229f576348f1c1b40c3f1b8a2a444b050bc76767df6b9bd8a"
+      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.1/repofleet_darwin_amd64.tar.gz"
+      sha256 "2026686b9d99ad5921ee419e5a50fa15a6698a5de19acf220430cfe3a59348e0"
 
       define_method(:install) do
         bin.install "rf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.0/repofleet_darwin_arm64.tar.gz"
-      sha256 "9b3ceef23a595f5e18637ccde71f98b06a006b2ab2ea1e3d33ea9d43e2d20d10"
+      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.1/repofleet_darwin_arm64.tar.gz"
+      sha256 "0df3498d0ff3035d8122e353e0489bada4221de195522bcbea9ac1f44d122471"
 
       define_method(:install) do
         bin.install "rf"
@@ -29,15 +29,15 @@ class Repofleet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.0/repofleet_linux_amd64.tar.gz"
-      sha256 "5659c0d4aef747ffcd634d85630ca35893833571c04948d54479009eb33721bd"
+      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.1/repofleet_linux_amd64.tar.gz"
+      sha256 "7d8d466ce5c17564710d13be4a026f4a93422b1d3c87f69b9401bb2524b6f0e1"
       define_method(:install) do
         bin.install "rf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.0/repofleet_linux_arm64.tar.gz"
-      sha256 "87801f132951242f8fb122582a2c42403553c4dc15736e47c01f52ca2a1d7a00"
+      url "https://github.com/mehranzand/repofleet/releases/download/v0.5.1/repofleet_linux_arm64.tar.gz"
+      sha256 "6abc71a0d5d4fb29d9b6d22ed19752f44c312410477259f65d19b66b65034b7e"
       define_method(:install) do
         bin.install "rf"
       end
