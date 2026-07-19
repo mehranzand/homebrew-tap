@@ -11,7 +11,7 @@ class Repofleet < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mehranzand/repofleet/releases/download/v0.7.0/repofleet_darwin_amd64.tar.gz"
-      sha256 "208b1c1bf9cf42aea7e3c9f35c42f10cb2ee4aaffb89719bf9420c83a8059c2a"
+      sha256 "fdd808c88f82812e6e5243c2390a3a8610c8a36eb996c9ae6c72ef66f97edf42"
 
       define_method(:install) do
         bin.install "rf"
@@ -19,7 +19,7 @@ class Repofleet < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mehranzand/repofleet/releases/download/v0.7.0/repofleet_darwin_arm64.tar.gz"
-      sha256 "559eedda1fe4fc02e0e4c5e30b75f6283c5a2f366d02649490cc425aeb7beb1a"
+      sha256 "0717f807528578bc4e64c8128945f986b4202218ca014618d5d3b3570408ebe7"
 
       define_method(:install) do
         bin.install "rf"
@@ -30,14 +30,14 @@ class Repofleet < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mehranzand/repofleet/releases/download/v0.7.0/repofleet_linux_amd64.tar.gz"
-      sha256 "41e99d0aa4955092b3172a5bcb028094d28bdc0a77b1388af8f6e3b1c0b56848"
+      sha256 "0eedea5e66ba3bb91480ec35ffd047258e5edb829673d6fb0b29d52bc48cfcb9"
       define_method(:install) do
         bin.install "rf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mehranzand/repofleet/releases/download/v0.7.0/repofleet_linux_arm64.tar.gz"
-      sha256 "c366393456e44fd0f1337b4d2dd43d57fb1da6d437111682d503a29d7a70ba20"
+      sha256 "20cb5dbfc9e76996be24bb6e8ff62e0657ac3811920113531c92767d6c7d39e2"
       define_method(:install) do
         bin.install "rf"
       end
